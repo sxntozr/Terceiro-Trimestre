@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Calculadora de Troco</title>
+</head>
+<body>
+
+    <h1>Calculadora</h1>
+
+    <button onclick="clicar()">Botão 1</button>
+
+    <script>
+        function clicar() {
+            let produto = window.prompt('Digite o nome do produto.')
+            let preço = window.prompt(`Informe o valor do ${produto}.`)
+            let dinheiro = window.prompt('Informe quanto em dinheiro você entregou.')
+            let troco = dinheiro - preço
+          window.alert(`Você comprou ${produto}, que custa R$${preço},00. Deu R$${dinheiro},00 em dinheiro e vai receber R$${troco},00 de troco! Volte sempre!`)  
+        }
+    </script>
+    
+</body>
+</html>
